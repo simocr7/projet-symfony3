@@ -1,0 +1,30 @@
+home:
+     path: /admin
+     defaults: { _controller:laabiappartooBundle:MVC:admin}
+
+listez:
+     path: /
+     defaults: { _controller:laabiappartooBundle:MVC:affichez}
+     
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+    
+hello:
+     path: /
+     defaults: { _controller:laabiappartooBundle:MVC:hello}
+     
+updateInsecte:
+    path: /updateInsecte/{id}
+    defaults: { _controller:laabiappartooBundle:MVC:updateInsecte}
+    
+deleteInsecte:
+    path: /deleteInsecte/{id}
+    defaults: { _controller:laabiappartooBundle:MVC:deleteInsecte}
+    
+addInsecte:
+    path: /addInsecte
+    defaults: { _controller:laabiappartooBundle:MVC:addInsecte}
+    
+affichez:
+     path: /listez
+     defaults: { _controller:laabiappartooBundle:MVC:listez}

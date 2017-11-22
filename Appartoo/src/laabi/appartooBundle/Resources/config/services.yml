@@ -1,0 +1,4 @@
+services:
+#    laabiappartoo.example:
+#        class: laabi\appartooBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

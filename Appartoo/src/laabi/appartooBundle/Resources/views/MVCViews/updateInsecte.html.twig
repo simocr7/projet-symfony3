@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>form d'ajout d'une insecte</title>
+<link rel="stylesheet" href="{{asset('bundles/laabiappartoo/css/style33.css')}}"/>
+<script src="{{asset('bundles/laabiappartoo/js/style.js')}}"></script>
+<meta charset="UTF-8">
+</head>
+<body>
+{{ form_start(form, {'method': 'post', 'attr': {'class': 'simo_projetbundle_insecte'}}) }}
+
+<div id="container">
+     <span class="input">
+{{ form_widget(form.age, { 'attr': {'class': 'input__field'} }) }}
+          {{ form_label(form.age, 'AGE', {
+                 'label_attr': {'class': 'input__label'}
+              }) }}
+     </span>
+     
+     <span class="input">
+         {{ form_widget(form.famille, { 'attr': {'class': 'input__field'} }) }}
+         {{ form_label(form.famille, 'FAMILLE', {
+                   'label_attr': {'class': 'input__label'}
+              }) }}
+     </span>
+     
+     <span class="input">
+          {{ form_widget(form.race, { 'attr': {'class': 'input__field'} }) }}
+          {{ form_label(form.race, 'RACE', {
+                   'label_attr': {'class': 'input__label'}
+              }) }}
+     </span>
+
+     <span class="input">
+        {{ form_widget(form.nouriture, { 'attr': {'class': 'input__field'} }) }}
+        {{ form_label(form.nouriture, 'NOURITURE', {
+                   'label_attr': {'class': 'input__label'}
+              }) }}
+     </span>
+
+  
+      <button type="submit" id="simo_projetbundle_insecte_valider"  class="send-button">UPDATE</button>
+
+</div>
+{{ form_end(form) }}
+ </body>
+</html>
